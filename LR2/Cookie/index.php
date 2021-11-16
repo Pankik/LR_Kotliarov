@@ -6,7 +6,7 @@ if($_GET["logout"]=='yes')
 ?>
 <head></head>
 <body>
-<form action="/Verholetov/login.php" method="POST">
+<form action="/Kotliarov/login.php" method="POST">
 <div class="mb-3" style="margin-bottom: 10px; margin-top:10px">
   <label for="exampleFormControlInput1" class="form-label">Login</label>
   <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="login">
