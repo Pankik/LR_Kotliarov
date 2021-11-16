@@ -15,7 +15,7 @@ session_write_close();
 <body>
 <h1>Log IN <?=$_POST["email"]?></h1>
 <div>
-<a href="/Verholetov/index.php?logout=yes">Выход</a>
+<a href="/Kotliarov/index.php?logout=yes">Выход</a>
 </div>
 </body>
 
