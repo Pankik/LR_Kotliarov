@@ -1,7 +1,7 @@
 
 <?
 session_start();
-if (isset($_POST["email"]) && isset($_POST["pass"]) && $_POST["pass"] !="") 
+if (isset($_POST["email"]) && isset($_POST["pass"]) && $_POST["pass"] !="" && $_POST["email"] !="") 
 {
   $_SESSION['email'] = $_POST["email"];
   $_SESSION['pass'] = $_POST["pass"];
