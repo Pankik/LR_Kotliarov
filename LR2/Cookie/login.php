@@ -21,6 +21,7 @@ else
 }
 
 ?>
+<html>
 <head></head>
 <body>
 <h1>Log IN <?=$_POST["email"]?></h1>
@@ -28,3 +29,4 @@ else
 <a href="/kotliarov/index.php?logout=yes">Выход</a>
 </div>
 </body>
+</html>
