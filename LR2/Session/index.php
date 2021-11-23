@@ -1,7 +1,6 @@
 <?
 session_start();
-$_SESSION = array();
-if($_GET["logout"]=='yes')
+if($_GET["logout"]=='yes'&& isset($_GET["logout"]))
 {   if (ini_get("session.use_cookies")) {
     $params = session_get_cookie_params();
     setcookie(session_name(), '', time() - 42000,
@@ -9,10 +8,15 @@ if($_GET["logout"]=='yes')
         $params["secure"], $params["httponly"]
     );
 }
-}
 session_destroy();
+}
+if(isset($_SESSION['email'])&& isset($_SESSION['pass'])&& $_SESSION['email']!=""&& $_SESSION['pass']!="")
+	{
+		header("Location:/Kotliarov/login.php");
+	}
 
 ?>
+<html>
 <head></head>
 <body>
 <form action="/Kotliarov/login.php" method="POST">
@@ -29,4 +33,4 @@ session_destroy();
   </div>
   </form>
   </body>
-
+</html>
