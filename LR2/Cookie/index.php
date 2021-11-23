@@ -11,6 +11,7 @@ if(isset($_COOKIE["pass"])&& isset($_COOKIE["email"])&& $_COOKIE["pass"]!="" && 
 
 }
 ?>
+<html>
 <head></head>
 <body>
 <form action="/Kotliarov/login.php" method="POST">
@@ -27,3 +28,4 @@ if(isset($_COOKIE["pass"])&& isset($_COOKIE["email"])&& $_COOKIE["pass"]!="" && 
   </div>
   </form>
   </body>
+</html>
