@@ -1,7 +1,14 @@
 <?
-if($_GET["logout"]=='yes')
-{setcookie("email",'',time()-3600);
-	setcookie("pass",'',time()-3600);
+
+if($_GET["logout"]=='yes' && isset($_GET["logout"]))
+{
+	setcookie("email",'',time()+3600);
+	setcookie("pass",'',time()+3600);
+}
+if(isset($_COOKIE["pass"])&& isset($_COOKIE["email"])&& $_COOKIE["pass"]!="" && $_COOKIE["email"]!="")
+{
+	header("Location:/Kotliarov/login.php");
+
 }
 ?>
 <head></head>
@@ -20,7 +27,3 @@ if($_GET["logout"]=='yes')
   </div>
   </form>
   </body>
-
-
-
-
